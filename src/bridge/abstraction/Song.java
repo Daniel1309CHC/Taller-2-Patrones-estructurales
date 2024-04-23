@@ -24,4 +24,8 @@ public class Song extends Player{
         System.out.println("Stopping song...");
         os.close();
     }
+
+    public void mute() {
+        os.setVolume(0);
+    }
 }

@@ -3,5 +3,9 @@ package bridge.implementor;
 public interface OS {
     void open();
     void close();
-    void getVolume();
+    void setVolume(int x);
+    int getVolume();
+    void setSpeed(double x);
+    double getSpeed();
+
 }
