@@ -2,16 +2,16 @@ package facade.app;
 
 // Fachada para el sistema de gestión de pedidos
 public class OrderManager {
-    private ProductSubsystem productSubsystem;
-    private CustomerSubsystem customerSubsystem;
-    private ShoppingCartSubsystem shoppingCartSubsystem;
-    private OrderProcessingSubsystem orderProcessingSubsystem;
+    private Product productSubsystem;
+    private Customer customerSubsystem;
+    private ShoppingCart shoppingCartSubsystem;
+    private OrderProcess orderProcessingSubsystem;
 
     public OrderManager() {
-        this.productSubsystem = new ProductSubsystem();
-        this.customerSubsystem = new CustomerSubsystem();
-        this.shoppingCartSubsystem = new ShoppingCartSubsystem();
-        this.orderProcessingSubsystem = new OrderProcessingSubsystem();
+        this.productSubsystem = new Product();
+        this.customerSubsystem = new Customer();
+        this.shoppingCartSubsystem = new ShoppingCart();
+        this.orderProcessingSubsystem = new OrderProcess();
     }
 
     // Métodos para gestionar productos

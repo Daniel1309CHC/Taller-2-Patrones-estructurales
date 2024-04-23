@@ -1,7 +1,7 @@
 package facade.app;
 
 // Subsistema para gestionar productos
-class ProductSubsystem {
+class Product {
     public void addProductToInventory(String productName, double price, int quantity) {
         System.out.println("Añadiendo " + quantity + " unidades del producto '" + productName + "' al inventario. Precio: $" + price);
     }

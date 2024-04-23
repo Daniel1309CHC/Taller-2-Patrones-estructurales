@@ -1,9 +1,9 @@
 package facade.app;
 
 // Subsistema para procesar pedidos
-class OrderProcessingSubsystem {
+class OrderProcess {
     public void processOrder(String orderId) {
-        System.out.println("Procesando pedido con ID: " + orderId);
+        System.out.println("Pedido procesado con ID: " + orderId);
     }
 
     public void cancelOrder(String orderId) {

@@ -1,7 +1,7 @@
 package facade.app;
 
 // Subsistema para gestionar clientes
-class CustomerSubsystem {
+class Customer {
     public void registerCustomer(String name, String email, String address) {
         System.out.println("Registrando cliente: " + name + " - Email: " + email + " - Dirección: " + address);
     }

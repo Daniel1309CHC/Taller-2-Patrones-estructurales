@@ -1,7 +1,7 @@
 package facade.app;
 
 // Subsistema para gestionar carritos de compra
-public class ShoppingCartSubsystem {
+public class ShoppingCart {
     public void addToCart(String productName, int quantity) {
         System.out.println("Añadiendo " + quantity + " unidades del producto '" + productName + "' al carrito.");
     }
