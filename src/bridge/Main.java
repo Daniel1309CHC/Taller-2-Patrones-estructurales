@@ -8,14 +8,23 @@ public class Main {
         OS ios = new iOS();
         OS android = new Android();
 
-        Player songIOS = new Song(ios);
-        Player podcastAndroid = new Podcast(android);
+        System.out.println("*** iOS ***");
+        playMedia(ios);
+        System.out.println("*** Android ***");
+        playMedia(android);
+    }
 
-        songIOS.start();
-        songIOS.stop();
+    public static void playMedia(OS os) {
+        System.out.println("== Song ==");
+        Song song = new Song(os);
+        song.start();
+        song.muteSong();
+        song.stop();
 
-        podcastAndroid.start();
-        podcastAndroid.pause();
-        podcastAndroid.stop();
+        System.out.println("== Podcast ==");
+        Podcast podcast = new Podcast(os);
+        podcast.start();
+        podcast.fastSpeed();
+        podcast.stop();
     }
 }

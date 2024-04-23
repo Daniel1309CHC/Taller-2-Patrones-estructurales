@@ -25,4 +25,12 @@ public class Podcast extends Player {
         os.close();
     }
 
+    public void normalSpeed(){
+        os.setSpeed(1.0);
+    }
+
+    public void fastSpeed(){
+        os.setSpeed(2.0);
+    }
+
 }
