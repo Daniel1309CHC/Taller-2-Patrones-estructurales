@@ -18,7 +18,7 @@ public class Main {
         System.out.println("== Song ==");
         Song song = new Song(os);
         song.start();
-        song.muteSong();
+        song.mute();
         song.stop();
 
         System.out.println("== Podcast ==");

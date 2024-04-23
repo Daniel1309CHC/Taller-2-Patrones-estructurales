@@ -25,7 +25,7 @@ public class Song extends Player{
         os.close();
     }
 
-    public void muteSong() {
+    public void mute() {
         os.setVolume(0);
     }
 }
